@@ -1,5 +1,12 @@
 ### Hi there 👋
 
+> #### my projects
+>
+> - I **[share with u](https://github.com/KovaxYuly/kovaxyuly/tree/main/share)**.
+>
+>  *Everything* is going according to **plan A**.
+
+
 <!--
 **KovaxYuly/kovaxyuly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
