@@ -2,7 +2,7 @@
 
 > #### my projects
 >
-> - I **[share with u](https://github.com/KovaxYuly/kovaxyuly/tree/main/share)**.
+> - I **[share with u](https://kovaxyuly.github.io/share)**.
 >
 >  *Everything* is going according to **plan A**.
 
