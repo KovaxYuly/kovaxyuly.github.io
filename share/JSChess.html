@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="keywords" content="Chess, Engine, Javascript, Play Chess, Chess Program, Javascript Chess, Game">
+		<title>JSChess</title>
+		<link href="JSChess_files/styles.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	</head>
+	<body>
+		<header>
+			<h3>JS Chess 2.1 <a href="http://www.bluefeversoft.com/Chess/versionHist.html" id="versionLink">version history</a></h3>
+			
+		</header>
+	
+		<div id="FenInDiv">			
+			<input type="text" id="fenIn" value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1">		
+			<button type="button" id="SetFen">Set Position</button>	
+		</div>	
+		<div id="ThinkingImageDiv">	
+			
+		</div>
+		<div id="Board">
+		<div class="Square clickElement rank8 file1 Dark"></div><div class="Square clickElement rank8 file2 Light"></div><div class="Square clickElement rank8 file3 Dark"></div><div class="Square clickElement rank8 file4 Light"></div><div class="Square clickElement rank8 file5 Dark"></div><div class="Square clickElement rank8 file6 Light"></div><div class="Square clickElement rank8 file7 Dark"></div><div class="Square clickElement rank8 file8 Light"></div><div class="Square clickElement rank7 file1 Light"></div><div class="Square clickElement rank7 file2 Dark"></div><div class="Square clickElement rank7 file3 Light"></div><div class="Square clickElement rank7 file4 Dark"></div><div class="Square clickElement rank7 file5 Light"></div><div class="Square clickElement rank7 file6 Dark"></div><div class="Square clickElement rank7 file7 Light"></div><div class="Square clickElement rank7 file8 Dark"></div><div class="Square clickElement rank6 file1 Dark"></div><div class="Square clickElement rank6 file2 Light"></div><div class="Square clickElement rank6 file3 Dark"></div><div class="Square clickElement rank6 file4 Light"></div><div class="Square clickElement rank6 file5 Dark"></div><div class="Square clickElement rank6 file6 Light"></div><div class="Square clickElement rank6 file7 Dark"></div><div class="Square clickElement rank6 file8 Light"></div><div class="Square clickElement rank5 file1 Light"></div><div class="Square clickElement rank5 file2 Dark"></div><div class="Square clickElement rank5 file3 Light"></div><div class="Square clickElement rank5 file4 Dark"></div><div class="Square clickElement rank5 file5 Light"></div><div class="Square clickElement rank5 file6 Dark"></div><div class="Square clickElement rank5 file7 Light"></div><div class="Square clickElement rank5 file8 Dark"></div><div class="Square clickElement rank4 file1 Dark"></div><div class="Square clickElement rank4 file2 Light"></div><div class="Square clickElement rank4 file3 Dark"></div><div class="Square clickElement rank4 file4 Light"></div><div class="Square clickElement rank4 file5 Dark"></div><div class="Square clickElement rank4 file6 Light"></div><div class="Square clickElement rank4 file7 Dark"></div><div class="Square clickElement rank4 file8 Light"></div><div class="Square clickElement rank3 file1 Light"></div><div class="Square clickElement rank3 file2 Dark"></div><div class="Square clickElement rank3 file3 Light"></div><div class="Square clickElement rank3 file4 Dark"></div><div class="Square clickElement rank3 file5 Light"></div><div class="Square clickElement rank3 file6 Dark"></div><div class="Square clickElement rank3 file7 Light"></div><div class="Square clickElement rank3 file8 Dark"></div><div class="Square clickElement rank2 file1 Dark"></div><div class="Square clickElement rank2 file2 Light"></div><div class="Square clickElement rank2 file3 Dark"></div><div class="Square clickElement rank2 file4 Light"></div><div class="Square clickElement rank2 file5 Dark"></div><div class="Square clickElement rank2 file6 Light"></div><div class="Square clickElement rank2 file7 Dark"></div><div class="Square clickElement rank2 file8 Light"></div><div class="Square clickElement rank1 file1 Light"></div><div class="Square clickElement rank1 file2 Dark"></div><div class="Square clickElement rank1 file3 Light"></div><div class="Square clickElement rank1 file4 Dark"></div><div class="Square clickElement rank1 file5 Light"></div><div class="Square clickElement rank1 file6 Dark"></div><div class="Square clickElement rank1 file7 Light"></div><div class="Square clickElement rank1 file8 Dark"></div><img src="JSChess_files/wR.png" class="Piece rank1 file1"><img src="JSChess_files/wN.png" class="Piece rank1 file2"><img src="JSChess_files/wB.png" class="Piece rank1 file3"><img src="JSChess_files/wQ.png" class="Piece rank1 file4"><img src="JSChess_files/wK.png" class="Piece rank1 file5"><img src="JSChess_files/wB.png" class="Piece rank1 file6"><img src="JSChess_files/wN.png" class="Piece rank1 file7"><img src="JSChess_files/wR.png" class="Piece rank1 file8"><img src="JSChess_files/wP.png" class="Piece rank2 file1"><img src="JSChess_files/wP.png" class="Piece rank2 file2"><img src="JSChess_files/wP.png" class="Piece rank2 file3"><img src="JSChess_files/wP.png" class="Piece rank2 file4"><img src="JSChess_files/wP.png" class="Piece rank2 file5"><img src="JSChess_files/wP.png" class="Piece rank2 file6"><img src="JSChess_files/wP.png" class="Piece rank2 file7"><img src="JSChess_files/wP.png" class="Piece rank2 file8"><img src="JSChess_files/bP.png" class="Piece rank7 file1"><img src="JSChess_files/bP.png" class="Piece rank7 file2"><img src="JSChess_files/bP.png" class="Piece rank7 file3"><img src="JSChess_files/bP.png" class="Piece rank7 file4"><img src="JSChess_files/bP.png" class="Piece rank7 file5"><img src="JSChess_files/bP.png" class="Piece rank7 file6"><img src="JSChess_files/bP.png" class="Piece rank7 file7"><img src="JSChess_files/bP.png" class="Piece rank7 file8"><img src="JSChess_files/bR.png" class="Piece rank8 file1"><img src="JSChess_files/bN.png" class="Piece rank8 file2"><img src="JSChess_files/bB.png" class="Piece rank8 file3"><img src="JSChess_files/bQ.png" class="Piece rank8 file4"><img src="JSChess_files/bK.png" class="Piece rank8 file5"><img src="JSChess_files/bB.png" class="Piece rank8 file6"><img src="JSChess_files/bN.png" class="Piece rank8 file7"><img src="JSChess_files/bR.png" class="Piece rank8 file8"></div>
+		<div id="CurrentFenDiv">
+			<span id="currentFenSpan">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - KQkq 0 0</span>		
+		</div>	
+		<br>
+		<div id="EngineOutput">Thinking Time: <br>
+			<select id="ThinkTimeChoice">
+			  <option value="1" selected="selected">1s</option>
+			  <option value="2">2s</option>
+			  <option value="4">4s</option>
+			  <option value="6">6s</option>
+			  <option value="8">8s</option>
+			  <option value="10">10s</option>
+			</select><br><br><br>
+	
+			<span id="BestOut">BestMove:</span><br>
+			<span id="DepthOut">Depth:</span><br>
+			<span id="ScoreOut">Score:</span><br>
+			<span id="NodesOut">Nodes:</span><br>
+			<span id="OrderingOut">Ordering:</span><br>
+			<span id="TimeOut">Time:</span><br><br>
+			<button type="button" id="SearchButton">Move Now</button><br>
+			<button type="button" id="NewGameButton">New Game</button><br>
+			<button type="button" id="FlipButton">Flip Board</button><br><br>
+			<button type="button" id="TakeButton">Take Back</button><br><br><br>
+			<span id="GameStatus"></span>
+		</div>
+		<script src="JSChess_files/jquery-1.js"></script>
+		<!--<script src="js/all.js"></script>-->
+		<!--<script src="js/all_comp.js"></script>-->
+		<script src="JSChess_files/defs.js"></script>
+		<script src="JSChess_files/io.js"></script>
+		<script src="JSChess_files/board.js"></script>
+		<script src="JSChess_files/movegen.js"></script>
+		<script src="JSChess_files/makemove.js"></script>
+		<script src="JSChess_files/perft.js"></script>
+		<script src="JSChess_files/evaluate.js"></script>
+		<script src="JSChess_files/pvtable.js"></script>
+		<script src="JSChess_files/search.js"></script>
+		<script src="JSChess_files/protocol.js"></script>
+		<script src="JSChess_files/gui.js"></script>
+		<script src="JSChess_files/main.js"></script>
+	
+</body></html>
