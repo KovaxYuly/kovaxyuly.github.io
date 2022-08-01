@@ -1,8 +1,12 @@
 const PIECES =  { EMPTY : 0, wP : 1, wN : 2, wB : 3,wR : 4, wQ : 5, wK : 6, 
               bP : 7, bN : 8, bB : 9, bR : 10, bQ : 11, bK : 12  };
-              
-const BRD_FILES = 12;
-const BRD_RANKS = 12;
+
+const RANKS_NUMBER = 8;
+const FILES_NUMBER = 8;
+const RANK_GAP = 2;
+const FILE_GAP = 2;              
+const BRD_FILES = FILES_NUMBER + 2 * FILE_GAP;
+const BRD_RANKS = RANKS_NUMBER + 2 * RANK_GAP;
 const BRD_SQ_NUM = BRD_FILES * BRD_RANKS;
 
 const FILES =  { FILE_A:0, FILE_B:1, FILE_C:2, FILE_D:3, 
@@ -13,8 +17,8 @@ const RANKS =  { RANK_1:0, RANK_2:1, RANK_3:2, RANK_4:3,
 	
 const COLOURS = { WHITE:0, BLACK:1, BOTH:2 };
 
-const FIRST_GAP_END = 2 * BRD_RANKS;
-const LAST_GAP_START = FIRST_GAP_END + 65;
+const FIRST_GAP_END = 2 * BRD_RANKS + FILE_GAP - 1;
+const LAST_GAP_START = (RANK_GAP + 8) * BRD_FILES - FILE_GAP;
 const SQUARES = {
   A1:FIRST_GAP_END + 1, B1:FIRST_GAP_END + 2, C1:FIRST_GAP_END + 3, D1:FIRST_GAP_END + 4,
   E1:FIRST_GAP_END + 5, F1:FIRST_GAP_END + 6, G1:FIRST_GAP_END + 7, H1:FIRST_GAP_END + 8,  

@@ -1,7 +1,7 @@
+
 $(function() {
 	init();
-	console.log("Main Init Called");
-
+	console.log("Main Init Called");	
 });
 
 function InitFilesRanksBrd() {
@@ -26,7 +26,6 @@ function InitFilesRanksBrd() {
 	
 	console.log("FilesBrd[0]:" + FilesBrd[0] + " RanksBrd[0]:" + RanksBrd[0]);
 	console.log("FilesBrd[SQUARES.A1]:" + FilesBrd[SQUARES.A1] + " RanksBrd[SQUARES.A1]:" + RanksBrd[SQUARES.A1]);
-	console.log("FilesBrd[SQUARES.A8]:" + FilesBrd[SQUARES.A8] + " RanksBrd[SQUARES.A8]:" + RanksBrd[SQUARES.A8]);
 	console.log("FilesBrd[SQUARES.E8]:" + FilesBrd[SQUARES.E8] + " RanksBrd[SQUARES.E8]:" + RanksBrd[SQUARES.E8]);
 
 }
